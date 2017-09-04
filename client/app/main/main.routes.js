@@ -5,5 +5,7 @@ export default function routes($routeProvider) {
 
   $routeProvider.when('/', {
     template: '<main></main>'
+  }).when('/stopwatch', {
+    template: '<stopwatch></stopwatch>'
   });
 }
