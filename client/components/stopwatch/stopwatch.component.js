@@ -3,15 +3,18 @@ const angular = require('angular');
 
 export class stopwatchComponent {
   //@ngInject
+
+  timeElapsed = 'foobar';
+
   constructor() {
-    this.message = 'World';
+    'ngInject';
   }
 }
 
 export default angular.module('funAngularProjectApp.stopwatch', [])
   .component('stopwatch', {
     template: require('./stopwatch.html'),
-    bindings: { message: '<' },
+    // bindings: { message: '<' },
     controller: stopwatchComponent
   })
   .name;
