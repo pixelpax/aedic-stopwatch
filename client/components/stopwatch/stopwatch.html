@@ -1,2 +1,7 @@
-<h1>Go fuck {{$ctrl.timeElapsed}}</h1>
+<h1>Time Elapsed: <span ng-bind="$ctrl.timeElapsed"></span></h1>
+<div class="well well-sm">
+  <button class="button button-primary" type="button" ng-click="$ctrl.startTimer()" >Start</button>
+  <button class="button button-primary" type="button" ng-click="$ctrl.pauseTimer()" >Pause</button>
+  <button class="button button-primary" type="button" ng-click="$ctrl.resetTimer()" >Reset</button>
 
+</div>
